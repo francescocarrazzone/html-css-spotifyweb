@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100..900;1,100..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&family=Zalando+Sans:ital,wght@0,200..900;1,200..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotifyweb</title>
+</head>
+
+<body>
+
+    <!--contenitore centrale, contiene sia la parte sinistra fissa sia la parte destra con barra di scorrimento-->
+
+    <div class="big-main-container">
+
+        <!--sezione con playlist e controlli profilo utente-->
+
+        <section class="left-playlist-bar">
+            <div class="top-element">
+                <div class="logo"><img src="./img/logo.svg" alt="logo-spotify"></div>
+                <nav class="search-navbar">
+                    <ul>
+                        <li class="home-green"><a href="#"><img src="./img/home.svg" alt="home"><span>Home</span></a>
+                        </li>
+                        <li class="search"><a href="#"><img src="./img/search.svg" alt="search"><span>Search</span></a>
+                        </li>
+                        <li class="library"><a href="#"><img src="./img/libreria.svg" alt="libreria"><span>La tua
+                                    librearia</span></a></li>
+                    </ul>
+                </nav>
+                <div class="playlist-bar">
+                    <h3><span>PLAYLIST</span></h3>
+                    <button>+</button>
+                    <span>Crea Playlist</span>
+                    <ul>
+                        <li><a href="#">Nome Paylist</a></li>
+                        <li><a href="#">Nome Paylist</a></li>
+                        <li><a href="#">Nome Paylist</a></li>
+                        <li><a href="#">Nome Paylist</a></li>
+                        <li><a href="#">Nome Paylist</a></li>
+                        <li><a href="#">Nome Paylist</a></li>
+                        <li><a href="#">Nome Paylist</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="bottom-element">
+                <div class="installing-anchor">
+                    <a href="#"><i class="fa-regular fa-circle-down"></i><span>Installa app</span></a>
+                </div>
+                <div class="profile-setting">
+                    <a href="#"><img src="./img/profile.svg" alt="profile"><span>John Doe</span></a>
+                </div>
+            </div>
+        </section>
+
+        <!--parte destra con scorrimento verticale contiene gli ablum e le liste dell'utente-->
+
+        <section class="right-main-contenitor">
+
+            <!--parte alta in cui é presente un ancora per effettuare l'upgrade del piano-->
+
+            <div class="upgrade-top-bar">
+                <a href="#">EFFETTUA L'UPGRADE</a>
+            </div>
+
+            <!--navbar con i selettori classifiche, podcat, ecc-->
+
+            <nav class="category-bar">
+                <ul class="category-bar-2">
+                    <li class="green-border"><a href="#">IN EVIDENZA</a></li>
+                    <li><a href="#">PODCAST</a></li>
+                    <li><a href="#">CLASSIFICHE</a></li>
+                    <li><a href="#">GENERI E MOOD</a></li>
+                    <li><a href="#">NUOVE USCITE</a></li>
+                    <li><a href="#">SCOPRI</a></li>
+                </ul>
+            </nav>
+            <div class="scrolling-section">
+                <div class="recently-played">
+                    <h2>Recently Played</h2>
+                    <div class="card-container">
+                        <div class="card"><a href="#"><img src="./img/metal_lifting.jpg" alt="heavymeta"></a>
+                            <h5>Heavy Metal</h5>
+                            <h6>Subtitle</h6>
+                        </div>
+                        <div class="card"><a href="#"><img src="./img/metal_lifting.jpg" alt="heavymeta"></a>
+                            <h5>Heavy Metal</h5>
+                            <h6>Subtitle</h6>
+                        </div>
+                        <div class="card"><a href="#"><img src="./img/metal_lifting.jpg" alt="heavymeta"></a>
+                            <h5>Heavy Metal</h5>
+                            <h6>Subtitle</h6>
+                        </div>
+                        <div class="card"><a href="#"><img src="./img/metal_lifting.jpg" alt="heavymeta"></a>
+                            <h5>Heavy Metal</h5>
+                            <h6>Subtitle</h6>
+                        </div>
+                        <div class="card"><a href="#"><img src="./img/metal_lifting.jpg" alt="heavymeta"></a>
+                            <h5>Heavy Metal</h5>
+                            <h6>Subtitle</h6>
+                        </div>
+                        <div class="card"><a href="#"><img src="./img/metal_lifting.jpg" alt="heavymeta"></a>
+                            <h5>Heavy Metal</h5>
+                            <h6>Subtitle</h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="created-for-me">
+                    <h2>Creato per John Doe</h2>
+                    <h4>Piú ascolti, piú accurati saranno i suggerimenti</h4>
+                    <div class="card-container">
+                        <div class="card"><a href="#"><img src="./img/metal_lifting.jpg" alt="heavymeta"></a>
+                            <h5>Heavy Metal</h5>
+                            <h6>Subtitle</h6>
+                        </div>
+                        <div class="card"><a href="#"><img src="./img/metal_lifting.jpg" alt="heavymeta"></a>
+                            <h5>Heavy Metal</h5>
+                            <h6>Subtitle</h6>
+                        </div>
+                </div>
+                <div class="popular-artist">
+                    <h2>Artisti piú popolari</h2>
+                    <h4>Piú ascolti, piú accurati saranno i suggerimenti</h4>
+                    <div class="card-container">
+                        <div class="card"><a href="#"><img class="border-radius-50" src="./img/metal_lifting.jpg" alt="heavymeta"></a>
+                            <h5>Heavy Metal</h5>
+                            <h6>Subtitle</h6>
+                        </div>
+                        <div class="card"><a href="#"><img class="border-radius-50" src="./img/metal_lifting.jpg" alt="heavymeta"></a>
+                            <h5>Heavy Metal</h5>
+                            <h6>Subtitle</h6>
+                        </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!--parte a pie pagina in cui é presente la play bar per il controllo della riproduzione e del volume-->
+
+    <section class="bottom-play-bar">
+        <div class="playing-now"><img src="./img/sinister.jpeg" alt="sinister"><h5>Sinister</h5><h6>Brano Nome</h6><i class="fa-regular fa-heart"></i><i class="fa-regular fa-folder"></i>
+        </div>
+        <div class="reproduction-bar"></div>
+        <div class="volume-bar"></div>
+    </section>
+
+</body>
+
+</html>
